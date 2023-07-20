@@ -1,0 +1,19 @@
+### Ignored folders ###
+FEAR-16 - Shield - GridReg-backups/
+Gerber/
+#######################
+
+### Ignored files (wildcard) ###
+*.csv
+*.xml
+*.log
+*.kicad_prl
+*.txt
+*.tmp
+################################
+
+### Ignored files (specific) ###
+fp-info-cache
+fp-lib-table
+sym-lib-table
+################################
