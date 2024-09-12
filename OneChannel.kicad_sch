@@ -4684,6 +4684,17 @@
 		)
 		(uuid "36d1c4d5-dea7-4b3b-bae6-256d7f3e777a")
 	)
+	(text "R205 & R210:\nValue needs to be high (100k)\nto damp track-L which seems\nto build an LC-Resonance with\nthe feedbackloop of U202B\nand U204B!"
+		(exclude_from_sim no)
+		(at 251.69 84.57 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3710ca90-0455-4545-bb42-01dc51e1293f")
+	)
 	(text "HV geht über externen\nRLOAD auf die Klemme\nvon Grid-In!\n(RPULL = excluded!)"
 		(exclude_from_sim no)
 		(at 106.172 35.052 0)
@@ -4872,6 +4883,17 @@
 			(justify right bottom)
 		)
 		(uuid "b01ce20a-d747-4c31-9707-be462a386c6d")
+	)
+	(text "Gain of \"U-FET-Tracker\" should have |G|=1.34\nwith the current voltage-divider:\nV_{Max}   * G_{VDiv}    = V_{Div, Max}\n1500V * 5/1005 = 7.462...V\n\n=> V_{Div, Max}  * |G| = V_{MeasRange}\n=> 7.462...V * 1.34 = 10V (full Measurement-Range)\nDepending on the R-Tolerances, a different value\nfor R213 may be necessary (G = -(R213+RV202)/R209)"
+		(exclude_from_sim no)
+		(at 212.68 125.24 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b9b276e6-d8b9-4fd8-88b9-331b19b89fa0")
 	)
 	(text "!!!ACHTUNG!!!"
 		(exclude_from_sim no)
@@ -9905,7 +9927,7 @@
 				)
 			)
 		)
-		(property "Value" "100n/25V"
+		(property "Value" "100n/25V (opt.)"
 			(at 56.01 58.15 0)
 			(effects
 				(font
